@@ -1,0 +1,167 @@
+/*
+Theme Name: Eonfik
+Author: Modina Theme
+Author URI: https://themeforest.net/user/modinatheme/
+Description: Construction HTML Template
+Version: 1.0.0
+*/
+
+/*
+=================================
+|***    Table of contents:   ***|
+=================================
+
+Main Style file-> assets/css/main.css 
+
+All the SCSS File in SCSS Folder of Assets Folder. You can read the doc file also for better understand.
+
+// BASIC
+@import 'basic';
+
+// MIXIN
+@import 'variables';
+
+// TYPOGRAPHY
+@import 'typography';
+
+// MIX
+@import 'mix';
+
+// HELPER
+@import 'helper';
+
+// ICON FONTS
+@import 'icon';
+
+// ANIMATION
+@import 'animation';
+
+// Button 
+@import 'btn';
+
+// Colors 
+@import 'colors';
+
+// Preloader 
+@import 'preloader';
+
+/* ----------------------------------
+    Template Section Styles
+ ------------------------------------*/
+
+ /* // Menu - Header Section 
+ @import 'header';
+ 
+ // Hero Slide - Section 
+ @import 'hero';
+ 
+ // Section Title - Heading 
+ @import 'section';
+ 
+ // About - Section 
+ @import 'about';
+ 
+ // Features - Section 
+ @import 'features';
+ 
+ // services - Section 
+ @import 'services';
+ 
+ // testimonial - Section 
+ @import 'testimonial';
+ 
+ // Portfolio - Cases - Section 
+ @import 'project';
+ 
+ // Price Table - Section 
+ @import 'price';
+ 
+ // Call To Action - Section 
+ @import 'cta';
+ 
+ // Content Block - Section 
+ @import 'contentblock';
+ 
+ // team - Section 
+ @import 'team';
+ 
+ // funfact - Section 
+ @import 'funfact';
+ 
+ // Download - Section 
+ @import 'carousel';
+ 
+ // FAQ - Section 
+ @import 'faq';
+ 
+ // Blog - Section 
+ @import 'blog';
+ 
+ // Contact Us - Section 
+ @import 'contact';
+ 
+ // footer - Section 
+ @import 'footer';n facts */
+
+
+
+ #fill {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.job-filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.filter-dropdown {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.job-listing {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.job-title {
+    color: #d9007b;
+    margin: 0;
+    font-size: 18px;
+}
+
+.job-details {
+    display: flex;
+    align-items: center;
+}
+
+.job-details span {
+    margin-right: 15px;
+    font-size: 14px;
+}
+
+.more-details {
+    color: #d9007b;
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.more-details i {
+    margin-left: 5px;
+}
