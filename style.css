@@ -165,3 +165,49 @@ All the SCSS File in SCSS Folder of Assets Folder. You can read the doc file als
 .more-details i {
     margin-left: 5px;
 }
+
+
+
+#staf {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+.table-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow-x: auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.schedule-table thead {
+    background-color: #EF5A6F;
+    color: white;
+}
+
+.schedule-table th, 
+.schedule-table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.schedule-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.schedule-table tbody tr.alt-row {
+    background-color: #f4f4ff;
+}
+
+.schedule-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
