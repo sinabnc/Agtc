@@ -36,6 +36,43 @@
         <!--<< Style.css >>-->
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            .sidebar {
+                border-right: 1px solid #ddd;
+                padding-right: 20px;
+                list-style-type: none;
+            }
+            .sidebar li {
+                padding: 10px 0;
+                cursor: pointer;
+                font-weight: bold;
+            }
+            .sidebar li.active {
+                color: #000;
+            }
+            .sidebar li:hover {
+                color: #007bff;
+            }
+            .content-table {
+                display: none;
+            }
+            .content-table.active {
+                display: table;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            th, td {
+                padding: 10px;
+                border: 1px solid #ddd;
+                text-align: left;
+            }
+            th {
+                background-color: #f8f8f8;
+            }
+        </style>
         <!-- template main style css file -->
     </head>
     <!--<< Body Area >>-->
@@ -243,7 +280,7 @@
         </header>
 
 <!--<< Breadcrumb Section Start >>-->
-<div class="breadcrumb-wrapper" data-background="assets/img/breadcrumb/breadcrumb.jpg">
+<div class="breadcrumb-wrapper" data-background="assets/img/staff-banner-2.jpg">
    <div class="container">
       <div class="page-heading center">
          <div class="icon-shape">
@@ -252,61 +289,300 @@
         
          <h1 class="wow fadeInUp" data-wow-delay=".3s">Our staff</h1>
      </div>
-     <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
-      <li>
-         <a href="index.html">
-            Home
-         </a>
-      </li>
-      <li>
-         <i class="far fa-chevron-right"></i>
-      </li>
-      <li>
-         services
-      </li>
-     </ul>
+     
    </div>
 </div>
 <br>
 <br>
 
 <!-- Service Image Start -->
-<div class="table-container" id="staf">
-    <table class="schedule-table">
-        <thead>
-            <tr>
-                <th> Name of Staff</th>
-                <th>Possition</th>
-                <th>Number</th>
-                
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Like a Butterfly</td>
-                <td>Boxing</td>
-                <td>9:00 AM - 11:00 AM</td>
-                
-              
-            </tr>
-            <tr class="alt-row">
-                <td>Mind & Body</td>
-                <td>Yoga</td>
-                <td>8:00 AM - 9:00 AM</td>
-                
-               
-            </tr>
-            <tr>
-                <td>Crit Cardio</td>
-                <td>Gym</td>
-                <td>9:00 AM - 10:00 AM</td>
-                
-              
-            </tr>
-            
-            <!-- Add more rows as needed -->
-        </tbody>
-    </table>
+<div class="container mt-5">
+    <h2 class="text-center mb-5">LIST OF MANAGEMENT & STAFFS</h2>
+
+    <div class="row">
+        <div class="col-md-3">
+            <ul class="sidebar">
+                <li class="active" onclick="showTable('management')">MANAGEMENT</li>
+                <li onclick="showTable('project')">PROJECT MANAGEMENT & TECHNICAL</li>
+                <li onclick="showTable('administration')">ADMINISTRATION</li>
+                <li onclick="showTable('worksite')">WORK SITE</li>
+            </ul>
+        </div>
+        <div class="col-md-9">
+            <table id="management" class="content-table active">
+                <tr>
+                    <th>Position</th>
+                    <th>Count</th>
+                </tr>
+                <tr>
+                    <td>Chairman</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Manager</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Finance Manager</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>ADMIN./HR Manager</td>
+                    <td>1</td>
+                </tr>
+            </table>
+
+            <table id="project" class="content-table">
+                <tr>
+                    <th>Position</th>
+                    <th>Count</th>
+                </tr>
+                <tr>
+                    <td>Architect / ID Designer</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Civil Engineers</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Construction Manager</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Document Controller</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>MEP Draftsman</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>MEP Manager</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Senior Electrical Engineer</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Electrical Engineer</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>PMV Officer</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Procurement Officer</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>QA/QC Engineer</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Quantity Surveyor</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Surveyor</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Technical Manager</td>
+                    <td>1</td>
+                </tr>
+            </table>
+
+            <table id="administration" class="content-table">
+                <tr>
+                    <th>Position</th>
+                    <th>Count</th>
+                </tr>
+                <tr>
+                    <td>HR Officer</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Accountant</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>PRO/Liason Officer</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Site Coordinator</td>
+                    <td>1</td>
+                </tr>
+            </table>
+
+            <table id="worksite" class="content-table">
+                <tr>
+                    <th>Position</th>
+                    <th>Count</th>
+                </tr>
+                <tr>
+                    <td>Safety Officer</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Safety Manager</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Site Supervisor</td>
+                    <td>1</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<div class="container mt-5">
+    <h2 class="text-center mb-5">LIST OF MANAGEMENT & STAFFS</h2>
+
+    <div class="row">
+        <div class="col-md-3">
+            <ul class="sidebar">
+                <li class="active" onclick="showTable('management')">MANAGEMENT</li>
+                <li onclick="showTable('project')">PROJECT MANAGEMENT & TECHNICAL</li>
+                <li onclick="showTable('administration')">ADMINISTRATION</li>
+                <li onclick="showTable('worksite')">WORK SITE</li>
+            </ul>
+        </div>
+        <div class="col-md-9">
+            <table id="management" class="content-table active">
+                <tr>
+                    <th>Position</th>
+                    <th>Count</th>
+                </tr>
+                <tr>
+                    <td>Chairman</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Manager</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Finance Manager</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>ADMIN./HR Manager</td>
+                    <td>1</td>
+                </tr>
+            </table>
+
+            <table id="project" class="content-table">
+                <tr>
+                    <th>Position</th>
+                    <th>Count</th>
+                </tr>
+                <tr>
+                    <td>Architect / ID Designer</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Civil Engineers</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Construction Manager</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Document Controller</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>MEP Draftsman</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>MEP Manager</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Senior Electrical Engineer</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Electrical Engineer</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>PMV Officer</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Procurement Officer</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>QA/QC Engineer</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Quantity Surveyor</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Surveyor</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Technical Manager</td>
+                    <td>1</td>
+                </tr>
+            </table>
+
+            <table id="administration" class="content-table">
+                <tr>
+                    <th>Position</th>
+                    <th>Count</th>
+                </tr>
+                <tr>
+                    <td>HR Officer</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Accountant</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>PRO/Liason Officer</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Site Coordinator</td>
+                    <td>1</td>
+                </tr>
+            </table>
+
+            <table id="worksite" class="content-table">
+                <tr>
+                    <th>Position</th>
+                    <th>Count</th>
+                </tr>
+                <tr>
+                    <td>Safety Officer</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Safety Manager</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Site Supervisor</td>
+                    <td>1</td>
+                </tr>
+            </table>
+        </div>
+    </div>
 </div>
 <br>
 <br>
@@ -417,6 +693,25 @@
 <!--<< Main.js >>-->
 <script src="assets/js/main.js"></script>
 <script src="app.js"></script>
+<script>
+    function showTable(tableId) {
+        var tables = document.querySelectorAll('.content-table');
+        var sidebarItems = document.querySelectorAll('.sidebar li');
+        
+        tables.forEach(function(table) {
+            table.classList.remove('active');
+        });
+        
+        sidebarItems.forEach(function(item) {
+            item.classList.remove('active');
+        });
+
+        document.getElementById(tableId).classList.add('active');
+        event.target.classList.add('active');
+    }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 <!-- Mirrored from modinatheme.com/html/eonfik-html/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 22 Aug 2024 10:35:57 GMT -->
