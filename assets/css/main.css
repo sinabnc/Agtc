@@ -109,7 +109,7 @@ body{
   color: var(--theme2);
 }
 .theme-btn.bg-color-3 {
-  background-color: var(--theme);
+  background-color: #000;
 }
 .theme-btn.bg-color-3 span, .theme-btn.bg-color-3 i {
   color: var(--white);
@@ -181,7 +181,7 @@ body{
   color: var(--white);
 }
 .theme-btn.hover-color {
-  background-color: var(--theme2);
+  background-color: #B43F3F;
 }
 .theme-btn.hover-color span, .theme-btn.hover-color i {
   color: var(--white);
@@ -3996,7 +3996,7 @@ input.main-search-input::placeholder {
   margin-bottom: 10px;
 }
 .about-wrapper-3 .about-content .about-list-items .list-area li i {
-  color: var(--theme2);
+  color: #B43F3F;
   margin-right: 5px;
 }
 .about-wrapper-3 .about-content .pro-items {
@@ -4037,7 +4037,7 @@ input.main-search-input::placeholder {
 .about-wrapper-3 .about-content .pro-items .progress-value {
   animation: load 3s normal forwards;
   border-radius: 10px;
-  background: var(--theme2);
+  background: #B43F3F;
   height: 10px;
   width: 0;
 }
@@ -4073,7 +4073,7 @@ input.main-search-input::placeholder {
   border-radius: 50%;
   text-align: center;
   font-size: 18px;
-  background-color: var(--theme2);
+  background-color: #B43F3F;
   color: var(--white);
 }
 .about-wrapper-3 .about-author .author-contact .content h6 {
@@ -4729,7 +4729,7 @@ input.main-search-input::placeholder {
 .arry-button .array-next {
   width: 50px;
   height: 50px;
-  background-color: var(--theme2);
+  background-color:#B43F3F;
   color: var(--white);
   border-radius: 50%;
   transition: all 0.4s ease-in-out;
@@ -5500,7 +5500,7 @@ input.main-search-input::placeholder {
   transform: translate(-50%, -50%);
 }
 .choose-us-wrapper-2 .choose-image-items .video-box .video-btn {
-  background-color: var(--theme2);
+  background-color: #B43F3F;
   color: var(--white);
   display: inline-block;
   font-size: 18px;
