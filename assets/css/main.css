@@ -1792,7 +1792,7 @@ input.main-search-input::placeholder {
   line-height: 45px;
   text-align: center;
   border-radius: 50%;
-  background-color: var(--theme2);
+  background-color: #B43F3F;
 }
 .offcanvas__wrapper .offcanvas__content .offcanvas__close i {
   color: var(--white);
